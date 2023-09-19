@@ -1,0 +1,2 @@
+# Correlation matrix between numerical values (SibSp Parch Age and Fare values) and Survived
+g = sns.heatmap(train[["Survived","Pclass","SibSp","Parch","Age","Fare"]].corr(),annot=True, fmt = ".2f", cmap = "coolwarm")
